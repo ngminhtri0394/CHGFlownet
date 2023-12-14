@@ -22,22 +22,29 @@ chgflownet:
  min_stop: 3
  policy_nn: graph
  ele_set: battery
+ #Fraction cooridnate min and max
  frlocmin: 0.0
  frlocmax: 1.0
+ #Min and max of mean and std of normal distribution of lattice length
  llocmin: 4
  llocmax: 10
  lsclmin: 1
  lsclmax: 2
+ #Min and max of cov matrix of multivariate normal distribution of fraction coordinate
  frcovmin: 0.0
  frcovmax: 0.1
+ #Min and max of location and concentration of Von Mises distribution of lattice angle
  alocmin: 0.78
  alocmax: 2.36
  aconmin: 1.0
  aconmax: 2.0
  max_ele: 3
+ # Required element
  req_ele: ['Li','Na', 'K']
  max_atom: 100
+ # Penalty term of bond distance score
  vpen_min: 0.01
  vpen_max: 0.1
  vpen_minmax: 0.001
+ # Reward function choice
  reward: reward_func_gd_dm_max_dist_SMACT
