@@ -15,7 +15,8 @@ Run CHGFlownet:
 python train_CHGFlownet.py
 ```
 
-#Citation
+# Citation
+
 If you find this work useful, please cite our paper:
 ```
 @inproceedings{nguyen2023hierarchical,
